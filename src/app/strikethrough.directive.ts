@@ -5,19 +5,19 @@ import { Directive, ElementRef, HostListener} from '@angular/core';
 })
 export class StrikethroughDirective {
 
-  constructor(private elem:ElementRef) { }
+  constructor(private elem:ElementRef){}
 
   @HostListener("click") onClicks(){
     this.textDeco("line-through")
   }
 
-  @HostListener("doubleclick") onDoubleClicks(){
-    this.textDeco("underline")
+  @HostListener("dblclick") onDoubleClicks(){
+    this.textDeco("None")
   }
 
   private textDeco(action:string){
-    this.elem.nativeElement.style.textDecoration = 'line-through';
+    this.elem.nativeElement.style.textDecoration=action;
+
   }
-   
 
 }
