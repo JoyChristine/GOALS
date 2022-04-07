@@ -1,6 +1,15 @@
 # Goals
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+## Description
+A project that displays goals. 
+On clicking the toggle details button, some details appear below i.e.,
+* Another button to mark the goal complete and make it disappear
+* Days remaining for ou to work on the goal <br>
+
+On clicking the goal, it strikes through.
+
+![image](https://user-images.githubusercontent.com/57414671/162009941-ab08aecd-7e97-4922-9944-4dcf6a5d8e67.png)
 
 ## Development server
 
